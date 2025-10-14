@@ -1,0 +1,215 @@
+/* estilos generales */
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #44444d;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.boton {
+    color: #f1f1d1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #8f3faf;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/* Diseño de la navegación */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #44444d;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin-left: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+/* Diseño de la cabecera header */
+header {
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 60vh;
+    justify-content: center;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+/* Aplicando diseño al id sobre */
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 20px;
+    background-color: #8f3faf;
+    color: #f1f1f1;
+    height: 30vh;
+    justify-content: center;
+    min-height: 259px;
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .boton {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+}
+
+/* Aplicando estilos al id servicios */
+#servicios {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+#servicios p {
+    text-align: center;
+    width: 100%;
+}
+
+/* Agregando diseño al portafolio */
+#portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#portafolio p {
+    text-align: center;
+    width: 100%;
+}
+
+#portafolio h2 {
+    margin-bottom: 20px;
+}
+
+#portafolio img {
+    width: 100%;
+}
+
+/* Agregando diseño a la sección de contacto */
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+aside {
+    background-color: #8f3faf;
+    font-size: .9em;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* MEDIA QUERIES PARA DISPOSITIVOS MÁS GRANDES */
+@media (min-width: 768px) {
+    /* MEDIA QUERYS PARA EL #servicios */
+    #servicios {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #servicios h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #servicios div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    
+    /* MEDIA QUERYS PARA EL #portafolio */
+    #portafolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #portafolio h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #portafolio img {
+        width: 33.3333333333%;
+    }
+    
+    /* MEDIA QUERYS PARA EL #contacto */
+    #contacto {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 580px;
+        margin: 0 auto;
+    }
+    
+    #contacto h2,
+    #contacto p {
+        width: 100%;
+    }
+}
